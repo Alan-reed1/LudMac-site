@@ -6,7 +6,7 @@ body {
 /* Center the text on the screen */
 h1 {
   text-align: center;
-  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Helvetica', 'Arial', sans-serif;
   text-shadow: 2px 2px 5px #ccc;
   margin-top: 4%;
 }
@@ -41,7 +41,7 @@ h1 {
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Helvetica', 'Arial', sans-serif;
 }
 
 
@@ -55,7 +55,7 @@ h1 {
   border-radius: 8px;
   cursor: pointer;
   margin-left: 7%;
-  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Helvetica', 'Arial', sans-serif;
 }
 
 #login-form input[type="submit"]:hover {
@@ -75,7 +75,7 @@ h1 {
   border-radius: 8px;
   cursor: pointer;
   margin-left: 7%;
-  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Helvetica', 'Arial', sans-serif;
 }
 
 #login-form input[type="reset"]:hover {
@@ -95,7 +95,7 @@ h1 {
   border-radius: 8px;
   cursor: pointer;
   margin-left: 7%;
-  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Helvetica', 'Arial', sans-serif;
 }
 
 #password-button:hover {
@@ -115,7 +115,7 @@ h1 {
   border-radius: 8px;
   cursor: pointer;
   margin-left: 7%;
-  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Helvetica', 'Arial', sans-serif;
 }
 
 #signup-button:hover {
