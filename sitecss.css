@@ -1,44 +1,125 @@
-    /* Style the form */
-    #login-form {
-      width: 300px;
-      background-color: #f4f4f4;
-      padding: 20px;
-      margin: auto;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    
-    /* Style the input fields */
-    input[type=text], input[type=password] {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      box-sizing: border-box;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    
-    /* Style the submit button */
-    input[type=submit] {
-      width: 100%;
-      background-color: #4CAF50;
-      color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    
-    /* Style the cancel button */
-    input[type=reset] {
-      width: 100%;
-      background-color: #ff7f50;
-      color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
+/* Style the body */
+body {
+  background-color: rgb(213, 216, 220);
+}
 
+/* Center the text on the screen */
+h1 {
+  text-align: center;
+  font-family: 'Brush Script MT', cursive;
+  text-shadow: 2px 2px 5px #ccc;
+  margin-top: 4%;
+}
+
+
+/* Style the form */
+#login-form {
+  width: 35%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 55px;
+  box-shadow: 2px 2px 5px #ccc;
+  border-radius: 20px;
+  background-color: rgb(171, 178, 185);
+  font-family: 'Brush Script MT', cursive;
+}
+
+/* Style the input fields */
+#login-form label {
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#login-form input[type="text"], #login-form input[type="password"] {
+  font-size: 1.2em;
+  color: rgb(40, 55, 71);
+  width: 93%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Brush Script MT', cursive;
+}
+
+
+/* Style the submit button */
+#login-form input[type="submit"] {
+  transition: all 0.2s ease-in-out;
+  background-color: rgb(76, 175, 80);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 7%;
+  font-family: 'Brush Script MT', cursive;
+}
+
+#login-form input[type="submit"]:hover {
+  background-color: rgb(84, 196, 89);
+  color: black;
+  transform: scale(1.15);
+}
+
+
+/* Style the cancel button */
+#login-form input[type="reset"] {
+  transition: all 0.2s ease-in-out;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 7%;
+  font-family: 'Brush Script MT', cursive;
+}
+
+#login-form input[type="reset"]:hover {
+  background-color: rgb(220, 0, 0);
+  color: black;
+  transform: scale(1.15);
+}
+
+
+/* Style the "Forgot Password?" button */
+#password-button {
+  transition: all 0.2s ease-in-out;
+  background-color: rgb(76, 175, 80);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 7%;
+  font-family: 'Brush Script MT', cursive;
+}
+
+#password-button:hover {
+  background-color: rgb(84, 196, 89);
+  color: black;
+  transform: scale(1.15);
+}
+
+
+/* Style the "Sign Up" button */
+#signup-button {
+  transition: all 0.2s ease-in-out;
+  background-color: rgb(76, 175, 80);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 7%;
+  font-family: 'Brush Script MT', cursive;
+}
+
+#signup-button:hover {
+  background-color: rgb(84, 196, 89);
+  color: black;
+  transform: scale(1.15);
+}
