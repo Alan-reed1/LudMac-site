@@ -12,12 +12,25 @@
       $error_message = 'Please enter your password';
     } else {
       // Connect to the database
-      $db_host = 'localhost';
-      $db_user = 'root';
+      $db_host = '195.201.179.80';
+      $db_user = 'ergopunc_LudMac';
       $db_pass = 'LudMac123';
-      $db_name = 'LudMac_school_project';
+      $db_name = 'ergopunc_LudMacDB';
       $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
       
+      $query = "SELECT * FROM users WHERE username='$username'";
+  	  $result = mysqli_query($conn, $query);
+  	  if (mysqli_num_rows($result) > 0) {
+      // The username is already taken
+      die('Username already exists');
+  }
+  
+  // Check if the password meets the security requirements
+  if (strlen($password) < 8) {
+    // The password is too short
+    die('Password must be at least 8 characters long');
+  }
+  if (!preg_match('/[A-Z]/', $password))
       // Check the connection
       if (!$conn) {
         $error_message = 'Error connecting to the database: ' . mysqli_connect_error();
