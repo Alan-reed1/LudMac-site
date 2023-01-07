@@ -38,10 +38,16 @@
         // Escape the form data for security
         $username = mysqli_real_escape_string($conn, $username);
         $password = mysqli_real_escape_string($conn, $password);
-        
+                
         // Query the database for the user
-        $query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
-        $result = mysqli_query($conn, $query);
+        $query = "SELECT * FROM users WHERE username = :username AND password = :password";
+
+        $stmt = $pdo->prepare($query);
+        $stmt->bindParam(':username', $username);
+        $stmt->bindParam(':password', $password);
+        $stmt->execute();
+
+        $result= $stmt->fetch();
         
         if (mysqli_num_rows($result) == 1) {
           // Login successful
